@@ -11,7 +11,7 @@ namespace myfirstcoreMVC
 
             // Add services to the container.
             builder.Services.AddControllersWithViews();
-            //configure database connectionstrings
+           // //configure database connectionstrings
             builder.Services.AddDbContext<EvryContext>(options =>
             options.UseSqlServer(builder.Configuration.GetConnectionString("DefaultConnection")));
 
